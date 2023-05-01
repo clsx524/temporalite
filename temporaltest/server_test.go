@@ -7,6 +7,7 @@ package temporaltest_test
 import (
 	"context"
 	"fmt"
+	"github.com/temporalio/temporalite"
 	"testing"
 	"time"
 
@@ -200,10 +201,15 @@ func TestClientWithDefaultInterceptor(t *testing.T) {
 func TestSearchAttributeCacheDisabled(t *testing.T) {
 	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
 	defer cancel()
-	ts := temporaltest.NewServer(temporaltest.WithT(t))
+	ts := temporaltest.NewServer(
+		temporaltest.WithT(t),
+		temporaltest.WithTemporaliteOptions(
+			temporalite.WithSearchAttributeCacheDisabled(),
+			temporalite.WithNamespaces("default")))
 
 	// Create a search attribute
 	_, err := ts.DefaultClient().OperatorService().AddSearchAttributes(ctx, &operatorservice.AddSearchAttributesRequest{
+		Namespace: "default",
 		SearchAttributes: map[string]enums.IndexedValueType{
 			"my-search-attr": enums.INDEXED_VALUE_TYPE_TEXT,
 		},
