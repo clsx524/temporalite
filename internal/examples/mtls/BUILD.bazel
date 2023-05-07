@@ -1,0 +1,21 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "lib",
+    srcs = ["gen.go"],
+    importpath = "",
+    visibility = ["//visibility:private"],
+)
+
+go_binary(
+    name = "mtls",
+    embed = [":mtls_lib"],
+    visibility = ["//:__subpackages__"],
+)
+
+go_library(
+    name = "mtls_lib",
+    srcs = ["gen.go"],
+    importpath = "github.com/temporalio/temporalite/internal/examples/mtls",
+    visibility = ["//visibility:private"],
+)

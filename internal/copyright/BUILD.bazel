@@ -1,0 +1,21 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "lib",
+    srcs = ["main.go"],
+    importpath = "",
+    visibility = ["//visibility:private"],
+)
+
+go_binary(
+    name = "copyright",
+    embed = [":copyright_lib"],
+    visibility = ["//:__subpackages__"],
+)
+
+go_library(
+    name = "copyright_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/temporalio/temporalite/internal/copyright",
+    visibility = ["//visibility:private"],
+)

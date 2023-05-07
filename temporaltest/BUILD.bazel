@@ -1,0 +1,46 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "temporaltest",
+    srcs = [
+        "logger.go",
+        "options.go",
+        "server.go",
+    ],
+    importpath = "github.com/temporalio/temporalite/temporaltest",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//:temporalite",
+        "@io_temporal_go_sdk//client",
+        "@io_temporal_go_sdk//worker",
+        "@io_temporal_go_server//common/log",
+    ],
+)
+
+go_test(
+    name = "lib_test",
+    srcs = ["server_test.go"],
+    deps = [
+        "@com_github_temporalio_temporalite//:go_default_library",
+        "@com_github_temporalio_temporalite//internal/examples/helloworld:go_default_library",
+        "@com_github_temporalio_temporalite//temporaltest:go_default_library",
+        "@io_temporal_go_api//enums/v1:go_default_library",
+        "@io_temporal_go_api//operatorservice/v1:go_default_library",
+        "@io_temporal_go_sdk//client:go_default_library",
+        "@io_temporal_go_sdk//worker:go_default_library",
+    ],
+)
+
+go_test(
+    name = "temporaltest_test",
+    srcs = ["server_test.go"],
+    deps = [
+        ":temporaltest",
+        "//:temporalite",
+        "//internal/examples/helloworld",
+        "@io_temporal_go_api//enums/v1:enums",
+        "@io_temporal_go_api//operatorservice/v1:operatorservice",
+        "@io_temporal_go_sdk//client",
+        "@io_temporal_go_sdk//worker",
+    ],
+)

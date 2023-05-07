@@ -21,3 +21,8 @@
 *.db
 
 dist/
+
+bazel-bin
+bazel-out
+bazel-temporalite
+bazel-testlogs

@@ -1,0 +1,17 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "helloworld",
+    srcs = [
+        "helloworld.go",
+        "testinterceptor.go",
+    ],
+    importpath = "github.com/temporalio/temporalite/internal/examples/helloworld",
+    visibility = ["//:__subpackages__"],
+    deps = [
+        "@io_temporal_go_sdk//activity",
+        "@io_temporal_go_sdk//interceptor",
+        "@io_temporal_go_sdk//worker",
+        "@io_temporal_go_sdk//workflow",
+    ],
+)
