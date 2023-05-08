@@ -644,7 +644,7 @@ github.com/bmizerany/perks v0.0.0-20141205001514-d9a9656a3a4b h1:AP/Y7sqYicnjGDf
 github.com/bmizerany/perks v0.0.0-20141205001514-d9a9656a3a4b/go.mod h1:ac9efd0D1fsDb3EJvhqgXRbFx7bs2wqZ10HQPeU8U/Q=
 github.com/boombuler/barcode v1.0.0/go.mod h1:paBWMcWSl3LHKBqUq+rly7CNSldXjb2rDl3JlRe0mD8=
 github.com/boombuler/barcode v1.0.1/go.mod h1:paBWMcWSl3LHKBqUq+rly7CNSldXjb2rDl3JlRe0mD8=
-github.com/brianvoe/gofakeit/v6 v6.20.1 h1:8ihJ60OvPnPJ2W6wZR7M+TTeaZ9bml0z6oy4gvyJ/ek=
+github.com/brianvoe/gofakeit/v6 v6.19.0 h1:g+yJ+meWVEsAmR+bV4mNM/eXI0N+0pZ3D+Mi+G5+YQo=
 github.com/cactus/go-statsd-client/statsd v0.0.0-20191106001114-12b4e2b38748/go.mod h1:l/bIBLeOl9eX+wxJAzxS4TveKRtAqlyDpHjhkfO0MEI=
 github.com/cactus/go-statsd-client/statsd v0.0.0-20200423205355-cb0885a1018c h1:HIGF0r/56+7fuIZw2V4isE22MK6xpxWx7BbV8dJ290w=
 github.com/cactus/go-statsd-client/statsd v0.0.0-20200423205355-cb0885a1018c/go.mod h1:l/bIBLeOl9eX+wxJAzxS4TveKRtAqlyDpHjhkfO0MEI=
@@ -1134,8 +1134,8 @@ go.temporal.io/api v1.19.1-0.20230502182801-b78596d36ea6 h1:5MaRNXRMcqAnTlHn4aj2
 go.temporal.io/api v1.19.1-0.20230502182801-b78596d36ea6/go.mod h1:OiRzMU/dM++aM7IexDcAk0yLc1Pktdr/MUMD0gdpXy8=
 go.temporal.io/sdk v1.22.1 h1:OawvkfZBy22H1W8A+9QQPhwlRLMFIGtmJQXpWaPHpeg=
 go.temporal.io/sdk v1.22.1/go.mod h1:LqYtPesETgMHktpH98Vk7WegNcikxErmmuaZPNWEnPw=
-go.temporal.io/server v1.20.1-0.20230505230607-392e769fbf9b h1:h/lR4iQ8a2kW7epXOYricGn6BCCYIaF5NxX/MpG5wFg=
-go.temporal.io/server v1.20.1-0.20230505230607-392e769fbf9b/go.mod h1:0DJjXr6NcpiwTD/3TH9nmvbzgVzeZz7ZOx4CG7mcN+U=
+go.temporal.io/server v1.20.2 h1:iPuAJcB1u2gO6SFuxGW+amoYCztXiWeZwz3YFitP29E=
+go.temporal.io/server v1.20.2/go.mod h1:64INJTgWJTrMhKEzwf5N508tT97964bNJ5+F169zNm4=
 go.temporal.io/version v0.3.0 h1:dMrei9l9NyHt8nG6EB8vAwDLLTwx2SvRyucCSumAiig=
 go.temporal.io/version v0.3.0/go.mod h1:UA9S8/1LaKYae6TyD9NaPMJTZb911JcbqghI2CBSP78=
 go.uber.org/atomic v1.4.0/go.mod h1:gD2HeocX3+yG+ygLZcrzQJaqmWj9AIm7n08wl/qW/PE=

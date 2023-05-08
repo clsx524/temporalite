@@ -7,7 +7,7 @@ require (
 	github.com/urfave/cli/v2 v2.23.7
 	go.temporal.io/api v1.19.1-0.20230502182801-b78596d36ea6
 	go.temporal.io/sdk v1.22.1
-	go.temporal.io/server v1.20.1-0.20230505230607-392e769fbf9b
+	go.temporal.io/server v1.20.2
 	go.uber.org/zap v1.24.0
 )
 
@@ -39,7 +39,6 @@ require (
 	go.opentelemetry.io/otel/trace v1.13.0 // indirect
 	go.opentelemetry.io/proto/otlp v0.19.0 // indirect
 	golang.org/x/exp v0.0.0-20230213192124-5e25df0256eb // indirect
-	golang.org/x/sync v0.1.0 // indirect
 	lukechampine.com/uint128 v1.2.0 // indirect
 	modernc.org/cc/v3 v3.40.0 // indirect
 	modernc.org/ccgo/v3 v3.16.13 // indirect
