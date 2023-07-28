@@ -1071,8 +1071,8 @@ github.com/temporalio/ringpop-go v0.0.0-20230606200434-b5c079f412d3 h1:V1U9fvhus
 github.com/temporalio/ringpop-go v0.0.0-20230606200434-b5c079f412d3/go.mod h1:LA2yFb94r5XoEnuMVHkCC/P5174whMy2Dd+cu+AEcQA=
 github.com/temporalio/tchannel-go v1.22.1-0.20220818200552-1be8d8cffa5b h1:Fs3LdlF7xbnOWHymbFmvIEuxIEt1dNRCfaDkoajSaZk=
 github.com/temporalio/tchannel-go v1.22.1-0.20220818200552-1be8d8cffa5b/go.mod h1:c+V9Z/ZgkzAdyGvHrvC5AsXgN+M9Qwey04cBdKYzV7U=
-github.com/temporalio/ui-server/v2 v2.16.2 h1:tfMr4FxCKm0vevbmd9EAIWj0oktJZG7OQLCyllCrzVg=
-github.com/temporalio/ui-server/v2 v2.16.2/go.mod h1:2Xl5rEyCfVzIMB6H+KgayhXQ2znBbNrZGh/Di5k4pJU=
+github.com/temporalio/ui-server/v2 v2.17.0 h1:LUgHtAKyopHxslNl5GMZvhDDXmpkrcee2+nbfC1DljY=
+github.com/temporalio/ui-server/v2 v2.17.0/go.mod h1:2Xl5rEyCfVzIMB6H+KgayhXQ2znBbNrZGh/Di5k4pJU=
 github.com/twmb/murmur3 v1.1.5/go.mod h1:Qq/R7NUyOfr65zD+6Q5IHKsJLwP7exErjN6lyyq3OSQ=
 github.com/twmb/murmur3 v1.1.8 h1:8Yt9taO/WN3l08xErzjeschgZU2QSrwm1kclYq+0aRg=
 github.com/twmb/murmur3 v1.1.8/go.mod h1:Qq/R7NUyOfr65zD+6Q5IHKsJLwP7exErjN6lyyq3OSQ=
