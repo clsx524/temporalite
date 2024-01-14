@@ -26,3 +26,4 @@ bazel-bin
 bazel-out
 bazel-temporalite
 bazel-testlogs
+.ijwb

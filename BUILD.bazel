@@ -4,6 +4,14 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 # gazelle:exclude .git/
 # gazelle:prefix github.com/temporalio/temporalite
 
+# gazelle:resolve proto proto google/api/httpbody.proto @googleapis//google/api:httpbody_proto
+# gazelle:resolve proto go    google/api/httpbody.proto @org_golang_google_genproto_googleapis_api//httpbody:go_default_library
+# gazelle:resolve proto proto google/rpc/errdetails.proto @googleapis//google/rpc:errdetails_proto
+# gazelle:resolve proto go    google/rpc/errdetails.proto @org_golang_google_genproto_googleapis_rpc//errdetails:go_default_library
+# gazelle:resolve proto proto google/rpc/status.proto @googleapis//google/rpc:status_proto
+# gazelle:resolve proto go    google/rpc/status.proto @org_golang_google_genproto_googleapis_rpc//status:go_default_library
+# gazelle:resolve proto proto google/rpc/status.proto @googleapis//google/rpc:status_proto
+# gazelle:resolve proto go    google/rpc/status.proto @org_golang_google_genproto_googleapis_rpc//status:go_default_library
 exports_files(
     srcs = ["go.mod"],
 )
@@ -16,7 +24,6 @@ gazelle(
     name = "gazelle-update-repos",
     args = [
         "-from_file=go.mod",
-        "-build_file_proto_mode=disable",
         "-prune",
     ],
     command = "update-repos",
